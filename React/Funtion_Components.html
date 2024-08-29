@@ -1,0 +1,89 @@
+<!-- A vanilla JavaScript function will return a string: -->
+
+function header() {
+    return "I’m the header!";
+  }
+  
+<!-- To display this string in your browser, you’d need to do something like the following: -->
+
+  <script>
+   function header() {
+     return "I’m the header!";
+   }
+   document.getElementById("header").innerHTML = header();
+</script>
+<div id="header">I’m the header!</div>
+
+
+<!-- Replicating that functionality in React is much more straightforward: -->
+function App() {
+  return “I’m the header!”
+};
+export default App;
+
+<!-- Written in the funtion components return -->
+
+function App() {
+  const stringVar = "I'm a string!";
+  const numberVar = 43110;
+  const objectVar = {
+    propertyKey: "property value",
+    vegetable: "cucumber"
+  }
+  const arrVar = ["index 0", "index 1"]
+  return (
+    <>
+      <p>{stringVar}</p>
+      <p>{numberVar}</p>
+      <p>{objectVar.propertyKey}</p>
+      <p>{objectVar.vegetable}</p>
+      <p>{arrVar[0]}</p>
+      <p>{arrVar[1]} </p>
+    </>
+  )
+}
+export default App
+<!-- Cleaned up -->
+
+const {propertyKey, vegetable} = objectVar;
+const [firstValue, secondValue] = arrVar;
+return (
+  <>
+    <p>{stringVar}</p>
+    <p>{numberVar}</p>
+    <p>{propertyKey}</p>
+    <p>{vegtable}</p>
+    <p>{firstValue}</p>
+    <p>{secondValue}</p>
+  </>
+)
+
+<!-- Header -->
+const Header = () => "I’m a header!"
+<!-- Must be exported  -->
+export default Header;
+
+
+<!-- Heade Component -->
+const Header = () => {
+  return(
+      <div>
+          "I'm a header!"
+      </div>
+  )
+} 
+export default Header;
+
+<!-- INLINE STYLE -->
+ <h1 style={{color:"blue", textAlign:"center"}} >App Parent</h1>
+ <!-- { <childComponent /> } -->
+
+
+ <!-- CSS -->
+.titleStyle{
+  font-size: 100px;
+  color: green;
+}
+
+<!-- APP.JSX -->
+ <h1 className="titleStyle">App Parent</h1>
