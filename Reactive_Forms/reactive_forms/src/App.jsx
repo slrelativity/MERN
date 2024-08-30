@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import MovieForm from './components/MovieForm'
+import Reactive from './assets/components/Reactive'
 import './App.css'
 
 function App() {
@@ -9,7 +7,7 @@ function App() {
 
   return (
     <>
-      <MovieForm/>
+    <Reactive/>
     </>
   )
 }
