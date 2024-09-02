@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+ul{
+  list-style-type: none;
+  justify-content: space-evenly;
+
+}
+
+input[type="text" i] {
+  padding-block: 1px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size:medium;
+}
+
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 10px 10px 10px 10px;
+  margin-right: 20px ;
+  padding: 5x;
+}

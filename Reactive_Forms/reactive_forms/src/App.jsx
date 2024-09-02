@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Reactive from './assets/components/Reactive'
 import './App.css'
+import Reactive from '../components/Reactive'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
