@@ -7,5 +7,6 @@ const planet = {
 }
 const planetCopy = {...planet}
 console.log(planet.composition[0] === planetCopy.composition[0]) //true
+console.log(planetCopy)
 console.log(planet === planetCopy)//false
 //planet is NOT the same value as plantCopy

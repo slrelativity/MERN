@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Reactive from '../components/Reactive'
+import Reactive from './components/Reactive'
 
 function App() {
 

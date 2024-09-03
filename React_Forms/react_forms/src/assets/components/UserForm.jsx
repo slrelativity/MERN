@@ -13,7 +13,7 @@ const UserForm = (props) => {
         
         // create a javascript object to hold all of the values
         const newUser = { username, email, password};
-        console.log("Welcome", newUser);
+
         setUsername("");
         setEmail("");
         setPassword("");

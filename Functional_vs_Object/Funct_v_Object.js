@@ -16,9 +16,3 @@ class Greeter {
 }
 const greeter = new Greeter('Jimbo');
 console.log(greeter.greet()); // Output: Hello, Jimbo!
-
-
-
-
-
-

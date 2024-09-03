@@ -23,6 +23,7 @@ const Reactive = () => {
 			setFnameError("");
 		}
 	};
+
 	//Reactive Form validation for Last Name critera
 	const validateLname = (value) => {
 		if (value.length < 3) {
@@ -31,6 +32,7 @@ const Reactive = () => {
 			setLnameError("");
 		}
 	};
+
 	//Reactive Form validation for Email Address critera
 	const validateEmail = (value) => {
 		if (value.length < 9) {
@@ -39,6 +41,7 @@ const Reactive = () => {
 			setEmailError("");
 		}
 	};
+	
 	//Reactive Form validation for Password critera
 	const validatePassword = (value) => {
 		if (value.length < 9) {
