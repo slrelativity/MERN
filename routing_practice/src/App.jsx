@@ -30,7 +30,7 @@ const NumberPage = () => {
 				<h1>This is not a number!</h1>
 			) : (
 				<h1>The number is: {id}</h1>
-			)};
+			)}
 		</div>
 	);
 };
