@@ -6,7 +6,7 @@ const port = 8000;
 // make sure these lines are above any app.get or app.post code blocks
 app.use(express.json());
 
-
+//function to create a new user
 const createUser = () =>{
     const newUser = {
 			firstName: faker.person.firstName(),
@@ -19,7 +19,7 @@ const createUser = () =>{
         return newUser
     };
 
-
+//function to create a new company from the Faker API
 const createCompany = () =>{
     const newCompany = {
 			name: faker.company.name(),
@@ -29,19 +29,19 @@ const createCompany = () =>{
         return newCompany
     };
 
-
+//function to get a newly created user from the Faker API
 app.get("/api/user/new", (req, res) => {
     const getNewUser = createUser()
     res.json(getNewUser);
 });
 
-
+//function to get a newly created company from the Faker API
 app.get("/api/companies/new", (req, res) => {
     const getNewCompany = createCompany()
 	res.json(getNewCompany);
 });
 
-
+//function to get a newly created user and new created company from the Faker API
 app.get("/api/user/company", (req, res) =>{
     const getNewUser = createUser()
     const getNewCompany = createCompany()
