@@ -1,7 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react"
+import CreatePage from "./views/CreatePage.jsx"
+import DashboardPage from "./views/DashboardPage.jsx"
+import DetailsPages from "./views/DetailsPages.jsx"
+import UpdatePage from "./views/UpdatePage.jsx"
+
+
 
 function App() {
   const [count, setCount] = useState(0)

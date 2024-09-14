@@ -23,6 +23,7 @@ const GetPokemonList = () => {
 			<ul>
 					{pokemonList.map((pokemon,index) =>(
                         <li key = {index}>{pokemon.name}</li>
+						
                 ))}
                 </ul>
 		</div>

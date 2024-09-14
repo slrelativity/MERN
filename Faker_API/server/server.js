@@ -24,6 +24,10 @@ const createCompany = () =>{
     const newCompany = {
 			name: faker.company.name(),
             address: faker.location.streetAddress(),
+            city: faker.location.city(),
+            sate: faker.location.state(),
+            zipCode: faker.location.zipCode(),
+            country: faker.location.zipCode(),
 			id: faker.string.uuid(),
         };
         return newCompany
