@@ -13,7 +13,7 @@ const CreatePage = () => {
 
     const submitHandler = (e) => {
 			e.preventDefault();
-			axios.post("http://localhost:8001/api/stores", {name,storeNumber,isOpen,})
+			axios.post("http://localhost:8001/api/stores", {name, storeNumber , isOpen,})
 				.then((response) => {
 					const newStore = response.data;
 					navigate(`/stores/${newStore._id}`);
@@ -61,7 +61,9 @@ const CreatePage = () => {
 						/>
 						{errors.isOpen && <p>{errors.isOpen.message}</p>}
 					</div>
-					<button>Add a new store</button>
+					<button className="create m-2" onClick={submitHandler}>
+						Add a new store
+					</button>
 				</form>
 			</div>
 		</div>

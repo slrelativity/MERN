@@ -1,3 +1,5 @@
+import React from "react";
+
 const MessageDisplay = (props) => {
 	const { currentMessage } = props;
 	return (

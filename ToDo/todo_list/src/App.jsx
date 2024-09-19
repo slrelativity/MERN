@@ -24,8 +24,10 @@ function App() {
 
 	return (
         <>
+        <fieldset>
         <Add_To_List addTask={addTask} />
 		<Todo_List TodoList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} />
+        </fieldset>
 		</>
 	);
 }

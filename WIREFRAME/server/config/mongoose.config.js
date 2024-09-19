@@ -5,9 +5,9 @@ dotenv.config();
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
-async function dbConnect(exam) {//UPDATE!!
+async function dbConnect(practice) {//UPDATE!!
 	try {
-		await connect(MONGODB_URI, { dbName: exam });
+		await connect(MONGODB_URI, { dbName: practice });
 		console.log("***************Pinged your deployment. You successfully connected to Database ***************************"
 		);
 	} catch (error) {console.log("@@@@@@@@@@@@@@ERROR connecting to Database!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");

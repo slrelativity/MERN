@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const DashboardPage = () => {
-		const [storeList, setStoreList] = useState([]);
+	const [storeList, setStoreList] = useState([]);
 	const [errors, setErrors] = useState(null);
 	const navigate = useNavigate();
 
@@ -41,7 +41,7 @@ const DashboardPage = () => {
 				</thead>
 				<tbody>
 					{storeList.map((store) => (
-						<tr key={storeList._id}>
+						<tr key={store._id}>
 							<td>
 								<Link to={`/stores/${store._id}`}>{store.name}</Link>
 							</td>
